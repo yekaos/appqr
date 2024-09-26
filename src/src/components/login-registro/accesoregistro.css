@@ -1,0 +1,260 @@
+body{
+  background-color: var(--bg-color);
+}
+.form-login {
+  width: 300px;
+  height: 550px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 2.5%;
+  margin-bottom: 3%;
+  margin-left: 16%;
+  border-radius: 10px;
+  border: groove var(--color-secondary) 4px;
+  box-shadow: 3px 3px 3px 3px rgb(53, 53, 53);
+}
+.form-register {
+  width: 600px;
+  min-height: 550px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-left: 45%;
+  margin-top: -39.3%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  border: groove var(--color-secondary) 4px;
+  box-shadow: 3px 3px 3px 3px rgb(53, 53, 53);
+}
+
+.register-form .field-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: -2%;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.h1Login {
+  color: var(--text-color-1);
+  margin-top: 5%;
+}
+
+.label-login {
+  color: var(--text-color-3);
+  text-shadow: none;
+  font-weight: bolder;
+  font-size: large;
+  margin-top: 10%;
+}
+
+.label-register {
+  color: var(--text-color-3);
+  text-shadow: none;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.input-login {
+  width: 250px;
+  height: 30px;
+}
+
+.input-registerr {
+  width: 250px;
+  height: 30px;
+}
+
+#eye-input-login {
+  position: absolute;
+  right: -1%;
+  bottom: 10%;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+#eye-input-register {
+  position: absolute;
+  right: -3%;
+  top: 40%;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+#validacion-contraseña {
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+#eye-input-register-2 {
+  position: relative;
+  right: -85%;
+  bottom: 18px;
+  transform: translateY(-50%);
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.error-message-confirmpassword {
+  margin-top: -25%;
+}
+
+#btn-entrar-login {
+  margin-top: 10%;
+}
+
+#btn-enviar-registro {
+  display: inline-flex;
+  cursor: pointer;
+  background-color: var(--btn-bg-2);
+  color: var(--text-color-2);
+  font-family: var(--font-text);
+  font-size: var(--font-s);
+  letter-spacing: var(--letter-space);
+  padding: var(--space-2);
+  margin: var(--space-2);
+  border: var(--color-secondary) var(--btn-border-solid-1);
+  border-radius: var(--btn-radius-1);
+  transition: 0.4s ease-in-out;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px #282828;
+  position: relative;
+}
+#btn-enviar-registro:hover {
+  background-color: #5a0a00;
+  text-shadow: none;
+  border: #5a0a00 var(--btn-border-solid-1);
+}
+.tittle-modal-add-user{
+  color: var(--text-color-1);
+}
+.label-add-user{
+  color: var(--text-color-3);
+  text-shadow: none;
+  font-weight: bolder;
+  font-size: large;
+}
+.input-register-add-user{
+  width: 250px;
+  height: 30px;
+}
+.toggle-password-button-add-user{
+  position: absolute;
+  right: 18%;
+  top: 46%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.toggle-password-button-add-user-2{
+  position: absolute;
+  right: 18%;
+  top: 46%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#validacion-contraseña-add-user{
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 46px;
+  margin-top: -20px;
+}
+.close-modal-add-user{
+  background-color: transparent;
+  border: none;
+  margin-left: 740px;
+  font-size: large;
+}
+.close-modal-add-user:hover{
+  cursor: pointer;
+}
+@media (max-width: 1024px){
+  .auth-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .form-login{
+    margin-left: 10px;
+    margin-top: 220px;
+  }
+  .form-register{
+    height: auto;
+    margin-left: 20px;
+    margin-top: 200px;
+    margin-bottom: 272px;
+  }
+}
+@media (max-width: 412px) {
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-login {
+    margin-top: 90px;
+    margin-left: 60px;
+  }
+  .form-register {
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  .form-register .field-group{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #eye-input-register{
+    margin-right: 15px;
+  }
+  #eye-input-register-2{
+    margin-left: -13px;
+  }
+  .close-modal-add-user{
+    margin-left: 315px;
+    margin-top: -5px;
+  }
+  #register-form-modal #register-field-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .password-modal-register{
+    margin-left: 20px;
+  }
+  .confirm-password-modal-register{
+    margin-left: -291px;
+    margin-top: 100px;
+  }
+  .btnregistromodal{
+    margin-top: -10px;
+  }
+  .toggle-password-button-add-user{
+    margin-right: -40px;
+  }
+  .toggle-password-button-add-user-2{
+    margin-right: -28px;
+  }
+}
