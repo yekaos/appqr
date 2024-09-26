@@ -8,7 +8,7 @@ import RegisterForm from "../components/login-registro/registro"
 import BtnUp from "../components/buttons/BtnUp"
 import BtnBack from "../components/buttons/BtnBack"
 
-// Simulación de una llamada a API para el inicio de sesión
+
 const login = async (email, password) => {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -17,7 +17,6 @@ const login = async (email, password) => {
   })
 }
 
-// Simulación de una llamada a API para el registro
 const register = async (name, email, password) => {
   return new Promise(resolve => {
     setTimeout(() => {
